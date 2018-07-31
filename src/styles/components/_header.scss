@@ -1,18 +1,23 @@
-#header {
-    background: $dark-blue;
-}
-
-#header__content {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: $s-size 0;
-}
-
-#header__title {
-    color: white;
-    text-decoration: none;
-    h1 {
-        margin: 0;
+.header {
+  header {
+    background: rgba(128, 128, 128, 0.5);
+    height: 2.5rem;
+    position: fixed;
+    left: 0; right: 0; top: 0; // allows flexbox to work despite position: fixed
+    .header__content {
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: darken(grey, 20%);
+      }
     }
+  }
+  img {
+    padding-top: 2.5rem;
+    width: 100%;
+  }
 }

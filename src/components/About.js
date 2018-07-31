@@ -17,11 +17,9 @@ export default () => (
         <div className='about-chef'>
           <h3>Head Chef</h3>
           <div className='about-chef-image'>
-            <div>
-              <div className='chef-name'>Vath</div>
-              <img src='' alt='head-chef' />
-              <div className='chef-name'>Sin</div>
-            </div>
+            <div className='chef-name'>Vath</div>
+            <img src='' alt='head-chef' />
+            <div className='chef-name'>Sin</div>
           </div>
         </div>
       </div>

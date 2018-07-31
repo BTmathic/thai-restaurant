@@ -8,7 +8,7 @@ import RestaurantFavourite from './RestaurantFavourite';
 export default () => (
     <div>
         <Header />
-        <div className='fullpage-image'>
+        <div className='fullpage-image landing-image'>
           <img src='/Images/landing-image.jpg' alt='Thai dish' />
         </div>
         <About />

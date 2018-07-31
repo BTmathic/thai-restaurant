@@ -1,0 +1,94 @@
+.menu {
+  background: grey;
+  color: white;
+  padding: 2rem 0;
+  .section-title {
+    font-size: 8vw;
+    padding-top: 2vh;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .menu-option {
+    font-size: 3.5vh;
+    padding: 0.5vh 0;
+  }
+
+  .navigation-menu-option, .navigation-menu-option:visited, .menu-option:visited {
+    color: $clicker-inactive;
+  }
+
+  .hovered, .navigation-menu-option:hover, .menu-option:hover {
+    color: $clicker-active;
+  }
+
+  .menu-header, .menu-footer {
+    width: 100%;
+  }
+
+  .menu-section-text {
+    margin: 5vw 10vw;
+    padding: 2vw 0;
+  }
+
+  .menu-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .menu-section {
+    background: white;
+    color: black;
+  }
+
+  .menu-contents {
+    margin: 0 auto;
+    padding: 3vh 0;
+    width: 80%;
+  }
+
+  .menu-item-title {
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 3vh 0;
+  }
+
+  .menu-item-contents {
+    font-size: 4.5vw;
+    padding-bottom: 3vh;
+  }
+
+  .menu-item {
+    padding: 0 5vw;
+  }
+
+  #menu-appetizers {
+    display: block;
+  }
+
+  #menu-soup, #menu-rice, #menu-noodles, #menu-kids-extra {
+    display: none;
+  }
+
+  .peanut-icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .spice-icon {
+    height: 20px;
+    width: 25px;
+  }
+
+  .spice-icon-narrow {
+      margin-left: -15px;
+  }
+
+  .menu-footer {
+      padding-bottom: 0.1vh;
+  }
+}

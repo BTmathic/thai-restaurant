@@ -1,0 +1,44 @@
+.about {
+  background: linear-gradient(white, darken(white, 10%));
+  width: 100%;
+  .about-overlay {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 80%;
+    .about-overlay-left {
+      display: flex;
+      flex-direction: column;
+    }
+    .about-bio {
+      display: none;
+    }
+    .about-chef {
+      h3 {
+        text-align: center;
+      }
+      .about-chef-image {
+        display: flex;
+        .chef-name {
+          align-items: center;
+          border-bottom: 4px solid grey;
+          border-top: 4px solid grey;
+          display: flex;
+          font-size: 2rem;
+          padding: 0 2rem;
+        }
+        img {
+          border: 2px solid grey;
+          border-radius: 50%;
+          height: 6rem;
+          width: 6rem;
+        }
+      }
+    }
+    .about-overlay-right {
+      padding: 2rem;
+    }
+  }
+}
+

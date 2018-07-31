@@ -1,0 +1,26 @@
+.restaurant-favourite {
+  align-items: center;
+  background: url('/Images/restaurant-fav-backdrop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 50vh;
+  .restaurant-fav-overlay {
+    margin: 0 auto;
+    max-width: 80%;
+    width: 80%;
+    .restaurant-fav-overlay-contents {
+      display: flex;
+      .fav-dish {
+        background: url('/Images/restaurant-fav.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+      }
+      .restaurant-fav {
+        background: white;
+        width: 50%;
+      }
+    }
+  }
+}

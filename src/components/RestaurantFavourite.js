@@ -10,11 +10,12 @@ import React from 'react';
 
 
 export default () => (
-  <div>
-    <img src='/Images/restaurant-fav-backdrop.jpg' alt='table with basil leaves' />
+  <div className='restaurant-favourite'>
+    {/*<img src='/Images/restaurant-fav-backdrop.jpg' alt='table with basil leaves' />*/}
     <div className='restaurant-fav-overlay'>
       <div className='restaurant-fav-overlay-contents'>
-        <img src='/Images/restaurant-fav.jpg' alt='restaurant favourite dish' />
+        <div className='fav-dish'></div>
+        {/*<img src='/Images/restaurant-fav.jpg' alt='restaurant favourite dish' />*/}
         <div className='restaurant-fav'>
           <h2>Dish title</h2>
           <p>Dish description</p>
