@@ -4,7 +4,7 @@ import React from 'react';
   About
   (top left) small story,
   (bottom left) picture of chef,
-  (right) four separate images spaced in square
+  (right) four separate images spaced in square with a nice overlay text
 */}
 
 export default () => (

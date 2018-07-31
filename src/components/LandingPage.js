@@ -1,37 +1,29 @@
 import React from 'react';
+import Menu from './Menu';
 import About from './About';
 import Header from './Header';
+import Contact from './Contact';
+import RestaurantFavourite from './RestaurantFavourite';
 
-const DashboardPage = () => (
+export default () => (
     <div>
         <Header />
-        <div className='landing-image'>
+        <div className='fullpage-image'>
           <img src='/Images/landing-image.jpg' alt='Thai dish' />
         </div>
         <About />
-        
-        {/* full image background, 'restaurant favourite' item in centered overlay
-          Menu item, 
-         (left) item image 
-         (right) description
-         (top right) price 
-        */}
-
-        {/* dark grey backdrop, menu on white overlay
-          Full menu, description on top, spice/allergies on bottom 
-          and main menu between on overlay
-        */}
-
-        {/* One last full screen image, thai culture image */}
-
-        {/* Black background
-          Contact
-          Restaurant name, hours of operation
-          credits
+        <RestaurantFavourite />
+        <Menu />
+        <div className='fullpage-image'>
+          <img src='/Images/temples-of-angkor.jpg' alt='Temples of Angkor' />
+          {/* Maybe a small overlay about This culture/cuisine? */}
+        </div>
+        {/* Lunch specials? Call ahead, ready in 10 minutes, three most popular options? */}
+        <Contact />
+        {/* credits
           - landing image Photo by Elli O. ( https://unsplash.com/@oelli ) on Unsplash
-
+          - restaurant fav backdrop image Photo by Monika Grabkowska ( https://unsplash.com/@moniqa ) on Unsplash
+          - restaurant fav image Photo by Carissa Gan ( https://unsplash.com/@carissagan ) on Unsplash
         */}
     </div>
 );
-
-export default DashboardPage;

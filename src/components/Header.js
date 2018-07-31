@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default Header = ({ startLogout }) => (
+export default () => (
   <header id='header'>
     <a href='/#top'>HOME</a>
     <a href='/#top'>ABOUT US</a>
