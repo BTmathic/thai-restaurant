@@ -1,0 +1,25 @@
+#contact {
+  background: darken(grey, 35%);
+  color: white;
+  .contact-details {
+    padding: 2rem;
+    .contact-methods {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .contact-title {
+    font-size: 125%;
+    text-align: center;
+  }
+  .hours-of-operation {
+    padding: 2rem 0;
+    text-align: center;
+    .contact-hours {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}

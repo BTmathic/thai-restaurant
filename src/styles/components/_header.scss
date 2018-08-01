@@ -1,8 +1,9 @@
 .header {
   header {
-    background: rgba(128, 128, 128, 0.5);
+    background: rgba(128, 128, 128, 0.8);
     height: 2.5rem;
     position: fixed;
+    z-index: 2;
     left: 0; right: 0; top: 0; // allows flexbox to work despite position: fixed
     .header__content {
       display: flex;

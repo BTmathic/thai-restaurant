@@ -1,14 +1,7 @@
 import React from 'react';
 
-{/* white backdrop
-  About
-  (top left) small story,
-  (bottom left) picture of chef,
-  (right) four separate images spaced in square with a nice overlay text
-*/}
-
 export default () => (
-  <div className='about'>
+  <div id='about'>
     <div className='about-overlay'>
       <div className='about-overlay-left'>
         <div className='about-bio'>
@@ -18,7 +11,7 @@ export default () => (
           <h3>Head Chef</h3>
           <div className='about-chef-image'>
             <div className='chef-name'>Vath</div>
-            <img src='' alt='head-chef' />
+            <img src='/Images/chef-profile.png' alt='head-chef' />
             <div className='chef-name'>Sin</div>
           </div>
         </div>

@@ -1,58 +1,50 @@
 import React from 'react';
 
-
-{/* Black background
-  Contact
-  Restaurant name, hours of operation
-*/}
-
-
 export default () => (
   <div id='contact'>
-    <div id='contact-address'>
-      <div className='contact-header'>
-        Restaurant Name
+    <div className='contact-details'>
+      <div className='contact-title'>
+        Thai Restaurant
       </div>
-      <div className='contact-contents'>
-        Restaurant Address
-      </div>
-      <div className='contact-contents'>
-        Restaurant City
-      </div>
-      <div className='contact-contents'>
-        Restaurant Postal/Zip Code
+      <div className='contact-methods'>
+        <div>
+          Mailing Address
+          <div className='contact-address'>
+            <div>123 Fake Street</div>
+            <div>Cityville</div>
+            <div>ABC123</div>
+          </div>
+        </div>
+        <div>
+          Phone Number
+          <div className='contact-phone'>
+            (123) 456-7890
+          </div>
+          Email
+          <div className='contact-method'>
+            thai@thai.ca
+          </div>
+        </div>
       </div>
     </div>
-    <div id='hours-of-operation'>
-      <div className='contact-header'>
+    <div className='hours-of-operation'>
+      <div className='contact-title'>
         HOURS OF OPERATION
       </div>
       <div>
-        <div className='contact-header'>
-          MONDAY - FRIDAY
+        <div className='contact-hours'>
+          <span>WEEKDAYS</span>
+          <span>11:30AM - 10:00PM</span>
         </div>
-        <span className='contact-contents'>
-          11:30AM - 3:00PM,
-        </span>
-        <span className='contact-contents'>
-          5:00 - 9:00PM
-        </span>
-        <div className='contact-header'>
-          SATURDAY
+        <div className='contact-hours'>
+          <span>SATURDAY</span>
+          <span>10:00AM - 11:00PM</span>
         </div>
-        <span className='contact-contents'>
-          4:00 - 9:00PM
-        </span>
-        <div className='contact-header'>
-          SUNDAY
+        <div className='contact-hours'>
+          <span>SUNDAY</span>
+          <span>11:00AM - 9:00PM</span>
         </div>
-        <span className='contact-contents'>
-          CLOSED
-        </span>
       </div>
-    </div>
-    <div id='contact-phone'>
-      Restaurant phone number
     </div>
   </div>
 );

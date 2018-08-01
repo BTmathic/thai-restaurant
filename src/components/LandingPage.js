@@ -24,6 +24,8 @@ export default () => (
           - landing image Photo by Elli O. ( https://unsplash.com/@oelli ) on Unsplash
           - restaurant fav backdrop image Photo by Monika Grabkowska ( https://unsplash.com/@moniqa ) on Unsplash
           - restaurant fav image Photo by Carissa Gan ( https://unsplash.com/@carissagan ) on Unsplash
+          - spices image Photo by Baehaki Hariri ( https://unsplash.com/@baehaki ) on Unsplash
+          - chef image Photo by Benjamin Parker ( https://unsplash.com/@brokenlenscap ) on Unsplash
         */}
     </div>
 );
