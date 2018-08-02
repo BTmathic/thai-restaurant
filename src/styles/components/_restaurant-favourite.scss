@@ -4,10 +4,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 50vh;
+  height: 0;
+  padding-top: 66%; // 4000 / 6000
+  width: 100%;
   .restaurant-fav-overlay {
-    margin: 2rem auto 0 auto;
-    max-width: 80%;
+    margin: -60% auto 0 auto;
+    max-width: 60rem;
+    min-height: 60%;
     position: relative;
     width: 80%;
     z-index: 1;
@@ -23,50 +26,105 @@
       z-index: -1;
     }
     .restaurant-fav-title {
-      font-size: 2.5rem;
-      padding-bottom: 1rem;
-      top: -3.5rem;
+      font-size: 2rem;
+      margin-top: -3rem;
+      top: 0;
       width: 60%;
     }
+    /*
     .restaurant-fav-source {
-      bottom: -2.5rem;
+      bottom: 0;
       font-size: 1.5rem;
+      margin-bottom: -0.7rem;
+      padding-bottom: 0.25rem;
       padding-top: 1rem;
       width: 80%;
     }
+    */
     .restaurant-fav-price {
       background: white;
       border: 1px solid grey;
       border-radius: 5px;
       font-weight: bold;
       font-size: 2rem;
+      margin-top: -2rem;
+      margin-right: -5%;
       padding: 0 0.5rem;
       position: absolute;
-      right: -5%;
-      top: -2rem;
+      right: 0;
+      top: 0;
     }
     .restaurant-fav-overlay-contents {
       display: flex;
+      flex-direction: column;
       .fav-dish {
         background: url('/Images/restaurant-fav.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 60%;
-        min-width: 150px;
-        min-height: 150px;
+        height: 0;
+        margin: 0 auto;
+        padding-top: 39.2%; // 1400/2500*70
+        width: 70%;
       }
       .restaurant-fav {
         align-items: center;
-        background: white;
+        background: rgba(240, 240, 240, 0.9);
         display: flex;
-        width: 40%;
-        h3 {
-          margin: 0 auto;
-          max-width: 80%;
-          text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 70%;
+        .restaurant-fav-contents {
+          h3 {
+            margin: 0 auto;
+            text-align: center;
+          }
+          p {
+            display: none;
+          }
         }
-        p {
-          display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .restaurant-favourite {
+    .restaurant-fav-overlay {
+      .restaurant-fav-title {
+        font-size: 3rem;
+        margin-top: -4.5rem;
+      }
+      /*
+      .restaurant-fav-source {
+        font-size: 2rem;
+        margin-bottom: -3rem;
+      }
+      */
+      .restaurant-fav-price {
+        font-size: 3rem;
+        margin-top: -2.5rem;
+        padding: 0 1rem;
+      }
+      .restaurant-fav-overlay-contents {
+        flex-direction: row;
+        .fav-dish {
+          min-height: 310px;
+        }
+        .restaurant-fav {
+          width: 40%;
+          .restaurant-fav-contents {
+            h3 {
+              margin: 2rem auto;
+              max-width: 80%;
+            }
+            p {
+              display: block;
+              margin: 0 auto;
+              text-align: center;
+              width: 80%;
+            }
+          }
         }
       }
     }

@@ -33,7 +33,7 @@ export default class Menu extends React.Component {
             you can enjoy our cuisine with all of its vibrant flavours to the fullest.
             </div>
           </div>
-          <div className='menu-main'>
+          <div className='menu-main content-container'>
             <div className='menu-sections'>
               {menuSections.map((section, index) => {
                 return (
@@ -756,8 +756,8 @@ export default class Menu extends React.Component {
           </div>
           <div className='menu-footer'>
             <div className='menu-section-text'>
-              Thai &amp; Cambodian cuisine is known for its spicy ingredients. Dishes marked with chili peppers indicate the level of
-            spice from Medium to Very Spicy. Our food may also be in contact with peanuts, wheat and seafood products. Please inform
+              <span className='desktop-only'>Thai &amp; Cambodian cuisine is known for its spicy ingredients. Dishes marked with chili peppers indicate the level of
+            spice from Medium to Very Spicy.</span> Our food may <span className='desktop-only'>also</span> be in contact with peanuts, wheat and seafood products. Please inform
             us of any allergies, restrictions and preference before ordering.
             </div>
             <div className='menu-legend menu-section-text'>

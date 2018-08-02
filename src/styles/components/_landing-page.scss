@@ -1,3 +1,21 @@
 img {
-  max-width: 100%;
+  //max-width: 100%;
+}
+
+.landing-image {
+  background-image: url('/Images/landing-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  padding-top: 66%; // 3456 / 5184
+  width: 100%;
+}
+
+.angkor-temples-image {
+  background-image: url('/Images/temples-of-angkor.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  padding-top: 53.125%; // 510 / 960
+  width: 100%;
 }

@@ -5,40 +5,75 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 4rem 2rem 0 2rem;
     width: 80%;
     .about-overlay-left {
       display: flex;
       flex-direction: column;
-    }
-    .about-bio {
-      display: none;
-    }
-    .about-chef {
-      h3 {
-        text-align: center;
+      justify-content: space-around;
+      width: 100%;
+      .about-bio {
+        display: none;
       }
-      .about-chef-image {
+      .about-chef {
         display: flex;
-        .chef-name {
-          align-items: center;
-          border-bottom: 4px solid grey;
-          border-top: 4px solid grey;
-          display: flex;
-          font-size: 2rem;
-          padding: 0 2rem;
+        justify-content: space-around;
+        h3 {
+          text-align: center;
         }
-        img {
-          border: 2px solid grey;
-          border-radius: 50%;
-          height: 6rem;
-          width: 6rem;
+        .about-chef-image {
+          display: flex;
+          .chef-name {
+            align-items: center;
+            border-bottom: 4px solid grey;
+            border-top: 4px solid grey;
+            display: flex;
+            font-size: 2rem;
+            padding: 0 2rem;
+          }
+          img {
+            border: 2px solid grey;
+            border-radius: 50%;
+            height: 6rem;
+            width: 6rem;
+          }
         }
       }
     }
     .about-overlay-right {
       padding: 2rem;
+      img {
+        max-width: 100%;
+      }
     }
+  }
+  .about-awards {
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    text-align: center;
+    width: 80%;
   }
 }
 
+@media (min-width: $desktop-breakpoint) {
+  #about {
+    .about-overlay {
+      flex-direction: row;
+      padding: 4rem 0 2rem 0;
+      .about-overlay-left {
+        width: 50%;
+        .about-bio {
+          display: block;
+          text-align: center;
+        }
+        .about-chef {
+          margin: 0 auto;
+        }
+      }
+      .about-overlay-right {
+        padding-right: 0;
+        width: 50%;
+      }
+    }
+  }
+}

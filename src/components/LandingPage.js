@@ -8,16 +8,12 @@ import RestaurantFavourite from './RestaurantFavourite';
 export default () => (
     <div>
         <Header />
-        <div className='fullpage-image landing-image'>
-          <img src='/Images/landing-image.jpg' alt='Thai dish' />
-        </div>
+        <div className='landing-image'></div>
         <About />
         <RestaurantFavourite />
         <Menu />
-        <div className='fullpage-image'>
-          <img src='/Images/temples-of-angkor.jpg' alt='Temples of Angkor' />
-          {/* Maybe a small overlay about This culture/cuisine? */}
-        </div>
+        <div className='angkor-temples-image'></div>
+        {/* Maybe a small overlay about This culture/cuisine? */}
         {/* Lunch specials? Call ahead, ready in 10 minutes, three most popular options? */}
         <Contact />
         {/* credits

@@ -6,6 +6,8 @@
     .contact-methods {
       display: flex;
       justify-content: space-between;
+      margin: 0 auto;
+      max-width: 40rem;
     }
   }
   .contact-title {
@@ -19,6 +21,7 @@
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
+      max-width: 40rem;
       width: 80%;
     }
   }
