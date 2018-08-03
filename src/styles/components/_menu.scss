@@ -5,8 +5,8 @@
   .menu-header, .menu-footer {
     width: 100%;
     .menu-section-text {
-      margin: 5vw 10vw;
-      padding: 2vw 0;
+      margin: 2rem 9rem 1rem 9rem;
+      padding: 2rem 0;
       text-align: center;
       .desktop-only {
         display: none;
@@ -14,7 +14,7 @@
     }
   }
   .menu-footer {
-    padding-bottom: 0.1vh;
+    padding-bottom: 0.1rem;
     .spice-levels {
       display: grid;
       grid-template-columns: auto auto;
@@ -37,27 +37,27 @@
       flex-direction: column;
       justify-content: space-evenly;
       margin: 0 auto;
-      height: 211px;
       text-align: center;
       width: 20rem;
       .menu-option {
         font-size: 2rem;
-        padding: 0.5vh 0;
-      }
-      .menu-option:visited {
-        color: $clicker-inactive;
-      }
-
-      .menu-option:hover {
-        color: $clicker-active;
-      }
-      .hovered {
-        color: $clicker-active;
+        padding: 0.5rem 0;
+        text-align: center;
+        .menu-section-display {
+          display: inline-block;
+          width: 135px;
+        }
+        .menu-previous, .menu-next {
+          cursor: pointer;
+          font-weight: bold;
+        }
+        .menu-previous { margin-right: 1rem; }
+        .menu-next { margin-left: 1rem; }
       }
     }
     .menu-contents {
       margin: 0 auto;
-      padding: 3vh 0;
+      padding: 3rem 0;
       width: 80%;
       .menu-hidden {
         display: none !important;
@@ -65,24 +65,37 @@
       .menu-section {
         background: white;
         color: black;
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 2rem;
         .menu-item {
-          max-width: 32rem;
-          padding: 0 5vw;
+          max-width: 28rem;
+          padding: 0 5rem;
           .menu-item-title {
             font-size: 1.5rem;
             font-weight: bold;
-            padding: 3vh 0;
+            padding: 3rem 0;
           }
           .menu-item-contents {
             font-size: 1.5rem;
-            padding-bottom: 3vh;
+            padding-bottom: 3rem;
             .menu-item-option {
               display: block;
               text-align: right;
               .menu-item-price {
                 font-weight: bold;
                 padding-left: 1rem;
+              }
+            }
+          }
+          .extras {
+            display: flex;
+            flex-wrap: wrap;
+            .menu-item-option {
+              .menu-item-price {
+                font-weight: bold;
+                padding: 0 2rem;
               }
             }
           }
@@ -113,13 +126,8 @@
       }
     }
     .menu-main {
-      flex-direction: row;
-      .menu-sections {
-        margin: 5rem 0 0 auto;
-      }
       .menu-contents {
-        margin: 0 auto 0 0;
-        width: 30rem;
+        max-width: 80rem;
       }
     }
     .peanut-icon {

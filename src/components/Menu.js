@@ -2,20 +2,18 @@ import React from 'react';
 
 export default class Menu extends React.Component {
   state = {
-    menuDisplay: '',
-    initialLoad: true
+    menuDisplayIndex: 0,
+    menuSections: ['APPETIZERS', 'SOUP', 'RICE', 'NOODLES', 'KIDS/EXTRAS']
   }
 
-  handleMenuClick = (e) => {
-    const menuDisplay = e.target.id;
-    const oldDisplay = this.state.menuDisplay;
-    if (this.state.initialLoad && menuDisplay !== 'appetizers') {
-      this.appetizersSection.classList.remove('hovered');
-      this.setState(() => ({ initialLoad: false }));
-    }
+  handleMenuClick = (newSectionIndex) => {
+    const menuDisplay = this.state.menuSections[newSectionIndex].toLowerCase();
+    const oldDisplay = this.state.menuSections[this.state.menuDisplayIndex].toLowerCase();
     this[`${menuDisplay.replace('/e', 'E').concat('Section')}`].classList.toggle('menu-hidden');
     this[`${oldDisplay.replace('/e', 'E').concat('Section')}`].classList.toggle('menu-hidden');
-    this.setState(() => ({ menuDisplay }));
+    this.setState(() => ({ 
+      menuDisplayIndex : newSectionIndex
+    }));
   }
 
   componentDidMount() {
@@ -23,29 +21,28 @@ export default class Menu extends React.Component {
   }
 
   render() {
-    const menuSections = ['APPETIZERS', 'SOUP', 'RICE', 'NOODLES', 'KIDS/EXTRAS'];
     return (
       <div id='menu'>
         <div className='content-container'>
           <div className='menu-header'>
             <div className='menu-section-text'>
               All of the items on our menu are made from scratch, using only the freshest ingredients and spices that are imported from Thailand of the highest quality. This way
-            you can enjoy our cuisine with all of its vibrant flavours to the fullest.
+              you can enjoy our cuisine with all of its vibrant flavours to the fullest.
             </div>
           </div>
           <div className='menu-main content-container'>
             <div className='menu-sections'>
-              {menuSections.map((section, index) => {
-                return (
-                  <div className={index === 0 && this.state.initialLoad ? 'menu-option hovered' : 'menu-option'}
-                    id={section.toLowerCase()}
-                    onClick={(e) => {this.handleMenuClick(e)}}
-                    key={section}
-                  >
-                    {section}
-                  </div>
-                );
-              })}
+              <div className='menu-option'>
+                <span className='menu-previous'
+                  onClick={() => { this.handleMenuClick( this.state.menuDisplayIndex === 0 ? this.state.menuSections.length - 1 : this.state.menuDisplayIndex - 1)}}
+                >&lang;</span>
+                <span className='menu-section-display'>
+                  {this.state.menuSections[this.state.menuDisplayIndex]}
+                </span>
+                <span className='menu-next'
+                  onClick={() => { this.handleMenuClick( this.state.menuDisplayIndex === this.state.menuSections.length - 1 ? 0 : this.state.menuDisplayIndex + 1 )}}
+                >&rang;</span>
+              </div>
             </div>
             <div className='menu-contents'>
               <div id='menu-appetizers' className='menu-section menu-visible'
@@ -678,7 +675,7 @@ export default class Menu extends React.Component {
                   <div className='menu-item-title'>
                     Extras
                   </div>
-                  <div className='menu-item-contents'>
+                  <div className='menu-item-content extras'>
                     <div>
                       <span className='menu-item-description'>
                         Shrimp
