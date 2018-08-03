@@ -3,7 +3,7 @@
     background: rgba(128, 128, 128, 0.8);
     font-size: $m-size;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 100rem;
     position: fixed;
     z-index: 2;
     left: 0; right: 0; top: 0; // allows flexbox to work despite position: fixed

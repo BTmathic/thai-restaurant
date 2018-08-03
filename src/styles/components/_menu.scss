@@ -1,6 +1,8 @@
 #menu {
   background: linear-gradient(darken(grey, 20%), darken(grey, 35%));
   color: white;
+  margin: 0 auto;
+  max-width: 100rem;
   padding: 2rem 0;
   .menu-header, .menu-footer {
     width: 100%;

@@ -5,7 +5,7 @@
   background-size: cover;
   display: flex;
   height: 0;
-  max-width: 80rem;
+  max-width: 100rem;
   padding-top: 66%; // 4000 / 6000
   width: 100%;
   .restaurant-fav-overlay {
@@ -91,7 +91,7 @@
 @media (min-width: $desktop-breakpoint) {
   .restaurant-favourite {
     margin: 0 auto;
-    padding-top: 52.6rem;
+    padding-top: 66rem;
     .restaurant-fav-overlay {
       .restaurant-fav-title {
         font-size: 3rem;

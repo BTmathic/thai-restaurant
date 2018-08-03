@@ -1,6 +1,8 @@
 #contact {
   background: darken(grey, 35%);
   color: white;
+  margin: 0 auto;
+  max-width: 100rem;
   .contact-details {
     padding: 2rem;
     .contact-methods {

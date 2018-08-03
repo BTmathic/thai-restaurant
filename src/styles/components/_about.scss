@@ -1,5 +1,7 @@
 #about {
   background: linear-gradient(white, darken(white, 10%));
+  margin: 0 auto;
+  max-width: 100rem;
   width: 100%;
   .about-overlay {
     display: flex;

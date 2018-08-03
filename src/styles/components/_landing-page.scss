@@ -4,7 +4,6 @@
   background-size: cover;
   height: 0;
   margin: 0 auto;
-  max-width: 80rem;
   padding-top: 66%; // 3456 / 5184
   width: 100%;
   img {
@@ -23,22 +22,24 @@
   background-size: cover;
   height: 0;
   margin: 0 auto;
-  max-width: 80rem;
   padding-top: 53.125%; // 510 / 960
   width: 100%;
 }
 
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: 60rem) {
   .landing-image, .angkor-temples-image {
-    height: 42.5rem;
     padding-top: 0;
-    width: 80rem;
+    width: 100rem;
   }
   .landing-image {
+    height: 66rem;
     img {
       margin-top: 0;
       padding-left: 1rem;
       padding-top: 5rem;
     }
+  }
+  .angkor-temples-image {
+    height: 53.125rem;
   }
 }
