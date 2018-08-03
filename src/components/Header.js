@@ -10,6 +10,5 @@ export default () => (
         <a href='#contact'>CONTACT</a>
       </div>
     </header>
-    <img src='/Images/royal-angkor.jpg' alt='restaurant logo' className='test'/>
   </div>
 );

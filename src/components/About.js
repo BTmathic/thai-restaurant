@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => (
   <div id='about'>
-    <div className='about-overlay'>
+    <div className='about-overlay content-container'>
       <div className='about-overlay-left'>
         <div>
           <div className='about-bio'>
@@ -24,6 +24,6 @@ export default () => (
         <img src='/Images/quad-plates.jpg' alt='four dishes at the restaurant' />
       </div>
     </div>
-    <div className='about-awards'>Royal Angkor has received nation wide recognition and has been voted among the Top 500 BEST Restaurants in the country by 'Where to Eat in Canada'.</div>
+    <div className='about-awards content-container'>Royal Angkor has received nation wide recognition and has been voted among the Top 500 BEST Restaurants in the country by 'Where to Eat in Canada'.</div>
   </div>
 );

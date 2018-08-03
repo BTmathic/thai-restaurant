@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => (
   <div className='restaurant-favourite'>
-    <div className='restaurant-fav-overlay'>
+    <div className='restaurant-fav-overlay content-container'>
       <div className='restaurant-fav-title'>
         Voted best
       </div>
