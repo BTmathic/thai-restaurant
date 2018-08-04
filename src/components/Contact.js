@@ -16,11 +16,11 @@ export default () => (
           </div>
         </div>
         <div>
-          Phone Number
+          Phone
           <div className='contact-phone'>
             (123) 456-7890
           </div>
-          Email
+          Catering
           <div className='contact-method'>
             thai@thai.ca
           </div>

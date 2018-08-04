@@ -7,7 +7,7 @@
   .menu-header, .menu-footer {
     width: 100%;
     .menu-section-text {
-      margin: 2rem 9rem 1rem 9rem;
+      margin: 2rem 2rem 1rem 2rem;
       padding: 2rem 0;
       text-align: center;
       .desktop-only {
@@ -59,6 +59,7 @@
     }
     .menu-contents {
       margin: 0 auto;
+      max-width: 280px;
       padding: 3rem 0;
       width: 80%;
       .menu-hidden {
@@ -70,10 +71,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        max-width: 280px;
         padding-bottom: 2rem;
         .menu-item {
           max-width: 28rem;
-          padding: 0 5rem;
+          padding: 0 2rem;
           .menu-item-title {
             font-size: 1.5rem;
             font-weight: bold;
@@ -122,6 +124,7 @@
   #menu {
     .menu-header, .menu-footer {
       .menu-section-text {
+        margin: 2rem 9rem 1rem 9rem;
         .desktop-only {
           display: inline;
         }
@@ -130,6 +133,12 @@
     .menu-main {
       .menu-contents {
         max-width: 80rem;
+        .menu-section {
+          max-width: 80rem;
+          .menu-item {
+            padding: 0 5rem;
+          }
+        }
       }
     }
     .peanut-icon {

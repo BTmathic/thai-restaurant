@@ -69,13 +69,15 @@
       .restaurant-fav {
         align-items: center;
         background: rgba(240, 240, 240, 0.9);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         margin: 0 auto;
         width: 70%;
         .restaurant-fav-contents {
-          h3 {
+          h4 {
             margin: 0 auto;
             text-align: center;
           }
@@ -114,9 +116,10 @@
           min-height: 310px;
         }
         .restaurant-fav {
+          border-radius: 0;
           width: 40%;
           .restaurant-fav-contents {
-            h3 {
+            h4 {
               margin: 2rem auto;
               max-width: 80%;
             }
