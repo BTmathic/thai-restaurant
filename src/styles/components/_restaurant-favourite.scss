@@ -48,7 +48,7 @@
       font-weight: bold;
       font-size: 2rem;
       margin-top: -2rem;
-      margin-right: -5%;
+      margin-right: -1rem;
       padding: 0 0.5rem;
       position: absolute;
       right: 0;
@@ -90,6 +90,33 @@
   }
 }
 
+@media (min-width: 400px) {
+  .restaurant-favourite {
+    .restaurant-fav-overlay {
+      .restaurant-fav-title {
+        width: 15rem;
+      }
+      .restaurant-fav-price {
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .restaurant-favourite {
+    .restaurant-fav-overlay {
+      .restaurant-fav-title {
+        font-size: 2.5rem;
+        margin-top: -4rem;
+      }
+      .restaurant-fav-price {
+        margin-right: 10%;
+      }
+    }
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .restaurant-favourite {
     margin: 0 auto;
@@ -98,6 +125,7 @@
       .restaurant-fav-title {
         font-size: 3rem;
         margin-top: -4.5rem;
+        width: 20rem;
       }
       /*
       .restaurant-fav-source {
@@ -107,6 +135,7 @@
       */
       .restaurant-fav-price {
         font-size: 3rem;
+        margin-right: 0;
         margin-top: -2.5rem;
         padding: 0 1rem;
       }

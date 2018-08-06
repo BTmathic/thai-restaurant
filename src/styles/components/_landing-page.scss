@@ -7,9 +7,9 @@
   padding-top: 66%; // 3456 / 5184
   width: 100%;
   img {
-    max-width: 100%;
+    max-width: 90%;
     opacity: 0.7;
-    margin-left: 2rem;
+    margin-left: 2%;
     margin-top: -63%;
     padding-top: 2.5rem;
     position: absolute;
@@ -34,8 +34,9 @@
   .landing-image {
     height: 66rem;
     img {
+      margin-left: 1rem;
       margin-top: 0;
-      padding-left: 1rem;
+      //padding-left: 1rem;
       padding-top: 5rem;
     }
   }

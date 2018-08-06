@@ -9,7 +9,7 @@ export default () => (
     <div>
       <Header />
       <div className='landing-image'>
-        <img src='/Images/royal-angkor.jpg' alt='restaurant logo' className='test' />
+        <img src='/Images/royal-angkor.jpg' alt='restaurant logo' />
       </div>
       <About />
       <RestaurantFavourite />
