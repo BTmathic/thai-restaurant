@@ -12,7 +12,7 @@ export default () => (
           <div className='restaurant-fav-contents'>
             <h4>Fancy noodle dish</h4>
             <p>Something something, with a something something and a hint of something to make an aromatic and flavourful combination known all throughout the country</p>
-            {/* make fav three course, then carousel appy, main and desert? */}
+            {/* make fav three course/catering, then carousel appy, main and desert? */}
           </div>
         </div>
       </div>

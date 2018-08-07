@@ -46,5 +46,8 @@ export default () => (
         </div>
       </div>
     </div>
+    <footer>
+      Images from <a href='https://unsplash.com/'>Unsplash</a>
+    </footer>
   </div>
 );
