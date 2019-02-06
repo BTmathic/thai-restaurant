@@ -1,5 +1,8 @@
 import React from 'react';
 
+const peanut = require('../../public/Images/peanut.png');
+const pepper = require('../../public/Images/pepper.png')
+
 export default class Menu extends React.Component {
   state = {
     menuDisplayIndex: 0,
@@ -50,7 +53,7 @@ export default class Menu extends React.Component {
               >
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Cambodian Spring Rolls (3)
                   </div>
                   <div className='menu-item-contents'>
@@ -66,7 +69,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Tofu Spring Rolls (3)
                   </div>
                   <div className='menu-item-contents'>
@@ -82,7 +85,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Vegetable Fresh Rolls (3)
                   </div>
                   <div className='menu-item-contents'>
@@ -98,7 +101,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Shrimp Fresh Rolls (3)
                   </div>
                   <div className='menu-item-contents'>
@@ -133,8 +136,8 @@ export default class Menu extends React.Component {
               >
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' /> Thai Tom Yum
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' /> Thai Tom Yum
                   </div>
                   <div className='menu-item-contents'>
                     <span className='menu-item-description'>
@@ -164,8 +167,8 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' /> Hot &amp; Sour Bamboo
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' /> Hot &amp; Sour Bamboo
                   </div>
                   <div className='menu-item-contents'>
                     <span className='menu-item-description'>
@@ -180,9 +183,9 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Namya Soup
                   </div>
                   <div className='menu-item-contents'>
@@ -198,9 +201,9 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
                     Coconut Green Curry
                   </div>
                   <div className='menu-item-contents'>
@@ -220,9 +223,9 @@ export default class Menu extends React.Component {
               >
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Thai Panang Curry
                   </div>
                   <div className='menu-item-contents'>
@@ -257,7 +260,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
                     Thai Pineapple Chicken
                   </div>
                   <div className='menu-item-contents'>
@@ -273,9 +276,9 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Hot &amp; Sour Shrimp
                   </div>
                   <div className='menu-item-contents'>
@@ -291,7 +294,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
                     Red Curry Stir Fry
                   </div>
                   <div className='menu-item-contents'>
@@ -307,9 +310,9 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Golden Chicken
                   </div>
                   <div className='menu-item-contents'>
@@ -341,9 +344,9 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
                     Thai Style
                   </div>
                   <div className='menu-item-contents'>
@@ -374,7 +377,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
                     Siam Delight
                   </div>
                   <div className='menu-item-contents'>
@@ -403,9 +406,9 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
                     Thai Green Curry
                   </div>
                   <div className='menu-item-contents'>
@@ -421,7 +424,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
                     Kako Khmer
                   </div>
                   <div className='menu-item-contents'>
@@ -437,9 +440,9 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Spicy Coriander
                   </div>
                   <div className='menu-item-contents'>
@@ -456,9 +459,9 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
                     Green Curry Bamboo
                   </div>
                   <div className='menu-item-contents'>
@@ -487,9 +490,9 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
-                    <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon' />
+                    <img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Red Curry Bamboo
                   </div>
                   <div className='menu-item-contents'>
@@ -523,7 +526,7 @@ export default class Menu extends React.Component {
               >
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Thai Vermicelli
                   </div>
                   <div className='menu-item-contents'>
@@ -546,7 +549,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Thai Rice Noodle
                   </div>
                   <div className='menu-item-contents'>
@@ -569,7 +572,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     House Pad Thai
                   </div>
                   <div className='menu-item-contents'>
@@ -586,7 +589,7 @@ export default class Menu extends React.Component {
                 </div>
                 <div className='menu-item'>
                   <div className='menu-item-title'>
-                    <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' />
+                    <img src={peanut} alt='peanut-icon' className='peanut-icon' />
                     Tofu Pad Thai
                   </div>
                   <div className='menu-item-contents'>
@@ -759,22 +762,22 @@ export default class Menu extends React.Component {
             </div>
             <div className='menu-legend menu-section-text'>
               <div className='legend-item'>
-                <img src='./Images/peanut.png' alt='peanut-icon' className='peanut-icon' /> Indicates dishes that contain peanuts
+                <img src={peanut} alt='peanut-icon' className='peanut-icon' /> Indicates dishes that contain peanuts
               </div>
               <div className='legend-item'>
-                <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' /> Indicates dishes are spicy
+                <img src={pepper} alt='spice-icon' className='spice-icon' /> Indicates dishes are spicy
               </div>
               <div className='legend-item spice-levels'>
                 <span className='spice-level'>
-                  <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' />
+                  <img src={pepper} alt='spice-icon' className='spice-icon' />
                 </span>
                 <span>Medium</span>
                 <span className='spice-level'>
-                  <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' /><img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                  <img src={pepper} alt='spice-icon' className='spice-icon' /><img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
                 </span>
                 <span>Spicy</span>
                 <span className='spice-level'>
-                  <img src='./Images/pepper.png' alt='spice-icon' className='spice-icon' /><img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' /><img src='./Images/pepper.png' alt='spice-icon' className='spice-icon spice-icon-narrow' />
+                  <img src={pepper} alt='spice-icon' className='spice-icon' /><img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' /><img src={pepper} alt='spice-icon' className='spice-icon spice-icon-narrow' />
                 </span>
                 <span>Very Spicy</span>
               </div>

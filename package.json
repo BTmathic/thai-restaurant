@@ -5,37 +5,24 @@
   "author": "Alexander Molnar",
   "license": "MIT",
   "scripts": {
-    "build:dev": "webpack",
-    "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server",
-    "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html out-dir prod"
   },
   "dependencies": {
-    "babel-cli": "6.24.1",
-    "babel-core": "6.25.0",
-    "babel-loader": "7.1.1",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1",
-    "cross-env": "^5.1.4",
-    "css-loader": "0.28.4",
     "dotenv": "^6.0.0",
-    "extract-text-webpack-plugin": "3.0.0",
     "node-sass": "4.5.3",
-    "normalize.css": "7.0.0",
-    "raf": "3.3.2",
+    "normalize.css": "8.0.1",
     "react": "16.4.0",
     "react-addons-shallow-compare": "^15.6.2",
     "react-dom": "16.4.2",
-    "sass-loader": "6.0.6",
-    "style-loader": "0.18.2",
-    "validator": "8.0.0",
-    "webpack": "3.1.0"
+    "validator": "8.0.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.5.1"
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.11.0"
   }
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+const chef = require('../../public/Images/chef-profile.png');
+const plates = require('../../public/Images/quad-plates.jpg');
 
 export default () => (
   <div id='about'>
@@ -13,7 +15,7 @@ export default () => (
               <h3>Head Chef</h3>
               <div className='about-chef-image'>
                 <div className='chef-name'>Vath</div>
-                <img src='/Images/chef-profile.png' alt='head-chef' />
+                <img src={chef} alt='head-chef' />
                 <div className='chef-name'>Sin</div>
               </div>
             </div>
@@ -21,7 +23,7 @@ export default () => (
         </div>
       </div>
       <div className='about-overlay-right'>
-        <img src='/Images/quad-plates.jpg' alt='four dishes at the restaurant' />
+        <img src={plates} alt='four dishes at the restaurant' />
       </div>
     </div>
     <div className='about-awards content-container'>Royal Angkor has received nation wide recognition and has been voted among the Top 500 BEST Restaurants in the country by 'Where to Eat in Canada'.</div>

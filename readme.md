@@ -16,6 +16,6 @@ Modern style webpage for a Thai Restaurant, including landing image, an about se
 
 ### Build Tools
 
-* Webpack
+* Parcel
 * Yarn
 * Babel
