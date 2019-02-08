@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html out-dir prod"
+    "build": "parcel build public/index.html --out-dir prod"
   },
   "dependencies": {
     "dotenv": "^6.0.0",
